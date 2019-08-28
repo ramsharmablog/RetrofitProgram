@@ -25,7 +25,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends  AppCompatActivity {
-   ApIInterface apIInterface;
+    ApIInterface apIInterface;
     ImageView imageView;
 
     @Override
@@ -38,6 +38,7 @@ public class MainActivity extends  AppCompatActivity {
         loginInfoCall.enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
+                Log.e("Responce",">>>>>>>>>"+response);
                 Log.e("Responce",">>>>>>>>>"+response);
             }
 
