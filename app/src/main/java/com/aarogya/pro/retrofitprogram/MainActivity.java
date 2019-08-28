@@ -5,8 +5,10 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 
 import com.aarogya.pro.retrofitprogram.API.APiClient;
 import com.aarogya.pro.retrofitprogram.API.ApIInterface;
@@ -24,6 +26,7 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
    ApIInterface apIInterface;
+   ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
